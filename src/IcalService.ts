@@ -67,8 +67,8 @@ export class IcalService {
           } else if (task.hasA(TaskDateName.Due)) {
             event += 'DTSTART:' + task.getDate(TaskDateName.Due, 'YYYYMMDD') + '\r\n';
           } else if (task.hasA(TaskDateName.TimeStart) && task.hasA(TaskDateName.TimeEnd)) {
-  event += 'DTSTART;TZID=Australia/Sydney:' + task.getDate(TaskDateName.TimeStart, 'YYYYMMDDTHHmmss') + '\r\n';
-  event += 'DTEND;TZID=Australia/Sydney:' + task.getDate(TaskDateName.TimeEnd, 'YYYYMMDDTHHmmss') + '\r\n';
+            event += 'DTSTART;TZID=Australia/Sydney:' + task.getDate(TaskDateName.TimeStart, 'YYYYMMDDTHHmmss') + '\r\n';
+            event += 'DTEND;TZID=Australia/Sydney:' + task.getDate(TaskDateName.TimeEnd, 'YYYYMMDDTHHmmss') + '\r\n';
           } else {
             event += 'DTSTART:' + task.getDate(null, 'YYYYMMDD') + '\r\n';
           }
@@ -118,9 +118,9 @@ export class IcalService {
           } else if (task.hasA(TaskDateName.Start)) {
             event += '' +
               'DTSTART:' + task.getDate(TaskDateName.Start, 'YYYYMMDD') + '\r\n';
-                  } else if (task.hasA(TaskDateName.TimeStart) && task.hasA(TaskDateName.TimeEnd)) {
-          event += 'DTSTART;TZID=Australia/Sydney:' + task.getDate(TaskDateName.TimeStart, 'YYYYMMDDTHHmmss') + '\r\n';
-          event += 'DTEND;TZID=Australia/Sydney:' + task.getDate(TaskDateName.TimeEnd, 'YYYYMMDDTHHmmss') + '\r\n';
+          } else if (task.hasA(TaskDateName.TimeStart) && task.hasA(TaskDateName.TimeEnd)) {
+            event += 'DTSTART;TZID=Australia/Sydney:' + task.getDate(TaskDateName.TimeStart, 'YYYYMMDDTHHmmss') + '\r\n';
+            event += 'DTEND;TZID=Australia/Sydney:' + task.getDate(TaskDateName.TimeEnd, 'YYYYMMDDTHHmmss') + '\r\n';
           } else {
             event += '' +
               'DTSTART:' + task.getDate(null, 'YYYYMMDD') + '\r\n';
