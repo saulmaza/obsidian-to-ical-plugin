@@ -18,6 +18,7 @@ export class IcalService {
       'VERSION:2.0\r\n' +
       'PRODID:-//Andrew Brereton//obsidian-ical-plugin v2.0.1//EN\r\n' +
       'X-WR-CALNAME:Obsidian Calendar\r\n' +
+      'X-WR-TIMEZONE:Australia/Sydney\r\n' +
       'NAME:Obsidian Calendar\r\n' +
       'CALSCALE:GREGORIAN\r\n' +
       events +
